@@ -1,0 +1,204 @@
+/* Localizable.strings (Deutsch — DE)
+   PriceKitchen */
+
+// ─── Common ───────────────────────────────────────────────
+"common.save"               = "Speichern";
+"common.cancel"             = "Abbrechen";
+"common.delete"             = "Löschen";
+"common.done"               = "Fertig";
+"common.edit"               = "Bearbeiten";
+"common.add"                = "Hinzufügen";
+"common.close"              = "Schließen";
+"common.next"               = "Weiter";
+"common.back"               = "Zurück";
+"common.skip"               = "Überspringen";
+"common.retry"              = "Erneut versuchen";
+"common.search"             = "Suchen";
+"common.share"              = "Teilen";
+"common.confirm"            = "Bestätigen";
+"common.error"              = "Fehler";
+"common.yes"                = "Ja";
+"common.no"                 = "Nein";
+"common.xp"                 = "EP";
+"common.level"              = "Stufe %d";
+"common.noData"             = "Noch nichts vorhanden";
+
+// ─── Splash Screen ────────────────────────────────────────
+"splash.line1"              = "Herd wird aufgeheizt …";
+"splash.line2"              = "Daten werden gewürzt …";
+"splash.line3"              = "Küche wird vorbereitet …";
+
+// ─── Onboarding ───────────────────────────────────────────
+"onboard.page1.title"       = "Dein persönlicher Preistracker";
+"onboard.page1.body"        = "Schluss mit Raten. Erfasse Preise einmal und sieh, wie sich deine Ausgaben für Lebensmittel entwickeln.";
+"onboard.page2.title"       = "Produkte in Sekunden hinzufügen";
+"onboard.page2.body"        = "Erstelle deine Liste regelmäßiger Einkäufe. Bei jedem Einkauf tippen und Preis erfassen — keine Tabellen nötig.";
+"onboard.page3.title"       = "Rezepte & echte Kosten";
+"onboard.page3.body"        = "Baue Rezepte aus deinen Produkten und sieh genau, was ein Gericht kostet. Vergleiche Läden für beste Angebote.";
+"onboard.page4.title"       = "Belohnungen beim Tracken";
+"onboard.page4.body"        = "Sammle Trophäen und steige auf für jeden erfassten Preis. Mach aus langweiligen Belegen eine befriedigende Gewohnheit.";
+"onboard.getStarted"        = "Los geht's";
+
+// ─── Tab Bar ──────────────────────────────────────────────
+"tab.kitchen"               = "Küche";
+"tab.basket"                = "Korb";
+"tab.oven"                  = "Ofen";
+"tab.lab"                   = "Labor";
+"tab.spiceRack"             = "Einstellungen";
+
+// ─── Kitchen (Dashboard) ──────────────────────────────────
+"kitchen.greeting"          = "Hallo, %@!";
+"kitchen.subtitle"          = "Dein täglicher Geschmacksbericht";
+"kitchen.card.level"        = "Koch-Rang";
+"kitchen.card.items"        = "Verfolgte Artikel";
+"kitchen.card.entries"      = "Erfasste Preise";
+"kitchen.card.streak"       = "Tage in Folge";
+"kitchen.recent.title"      = "Neueste Preisbewegungen";
+"kitchen.recent.empty"      = "Erfasse deinen ersten Preis, um Änderungen zu sehen.";
+"kitchen.tip.title"         = "Koch-Tipp";
+"kitchen.tip.body"          = "Erfasse denselben Artikel wöchentlich für die besten Inflationseinblicke.";
+"kitchen.randomRecipe"      = "Zufälliges Rezept für heute";
+"kitchen.xpToNext"          = "%d EP bis zur nächsten Stufe";
+
+// ─── Market Basket (Items & Prices) ──────────────────────
+"basket.title"              = "Warenkorb";
+"basket.addItem"            = "Neue Zutat";
+"basket.addPrice"           = "Preis erfassen";
+"basket.itemName"           = "Produktname";
+"basket.storeName"          = "Geschäft";
+"basket.price"              = "Preis";
+"basket.unit"               = "Einheit (z. B. 1 kg)";
+"basket.category"           = "Kategorie";
+"basket.emoji"              = "Emoji";
+"basket.currency"           = "Währung";
+"basket.notes"              = "Notizen (optional)";
+"basket.lastPrice"          = "Zuletzt: %@";
+"basket.priceCount"         = "%d Einträge";
+"basket.empty"              = "Dein Korb ist leer. Tippe auf +, um ein Produkt hinzuzufügen.";
+"basket.search.placeholder" = "Zutaten suchen …";
+"basket.delete.confirm"     = "Dieses Produkt und seine gesamte Preishistorie entfernen?";
+"basket.validation.nameRequired"   = "Bitte gib einen Produktnamen ein.";
+"basket.validation.nameTooLong"   = "Produktname ist zu lang (max. 100 Zeichen).";
+"basket.validation.duplicate"     = "Dieses Produkt existiert bereits in diesem Geschäft.";
+"basket.validation.priceInvalid"  = "Bitte gib einen gültigen Preis ein.";
+"basket.validation.pricePositive" = "Der Preis muss größer als null sein.";
+"basket.validation.priceTooHigh"  = "Der Preiswert ist zu hoch.";
+"basket.sort.name"          = "Name";
+"basket.sort.recent"        = "Neueste";
+"basket.sort.change"        = "Preisänderung";
+
+// ─── Categories ───────────────────────────────────────────
+"category.dairy"            = "Milchprodukte";
+"category.bread"            = "Brot & Backwaren";
+"category.meat"             = "Fleisch & Fisch";
+"category.produce"          = "Obst & Gemüse";
+"category.drinks"           = "Getränke";
+"category.snacks"           = "Snacks";
+"category.household"        = "Haushalt";
+"category.other"            = "Sonstiges";
+
+// ─── Inflation Oven (Analysis) ────────────────────────────
+"oven.title"                = "Inflations-Ofen";
+"oven.overall"              = "Gesamtveränderung";
+"oven.period.week"          = "Woche";
+"oven.period.month"         = "Monat";
+"oven.period.quarter"       = "Quartal";
+"oven.period.year"          = "Jahr";
+"oven.chart.title"          = "Preis im Zeitverlauf";
+"oven.hottest"              = "Stärkste Anstiege 🔥";
+"oven.coolest"              = "Größte Rückgänge ❄️";
+"oven.noChart"              = "Füge mindestens 2 Preise für einen Artikel hinzu.";
+"oven.personalRate"         = "Deine persönliche Inflation";
+"oven.personalRate.desc"    = "Basierend auf deinen tatsächlichen Einkäufen";
+"oven.compare"              = "Geschäfte vergleichen";
+"oven.compare.desc"         = "Gleiches Produkt, verschiedene Läden";
+"oven.insight.rising"       = "%@ stieg um %.1f %% seit dem ersten Eintrag.";
+"oven.insight.stable"       = "%@ blieb bemerkenswert stabil.";
+"oven.insight.falling"      = "%@ fiel um %.1f %% — guter Fund!";
+
+// ─── Flavor Lab (Recipe Builder) ─────────────────────────
+"lab.title"                 = "Geschmacks-Labor";
+"lab.empty"                 = "Erstelle dein erstes Rezept. Füge Zutaten aus deinem Warenkorb hinzu und sieh, wie viel ein Gericht kostet.";
+"lab.newRecipe"             = "Neues Rezept";
+"lab.dishName"               = "Gerichtname";
+"lab.dishEmoji"              = "Gericht-Emoji";
+"lab.servings"               = "Portionen";
+"lab.ingredients"            = "Zutaten";
+"lab.addIngredient"         = "Zutat hinzufügen";
+"lab.selectProduct"         = "Wähle ein Produkt aus deinem Korb";
+"lab.quantity"               = "Menge";
+"lab.delete.confirm"        = "Dieses Rezept und alle Zutaten löschen?";
+"lab.validation.nameRequired" = "Bitte gib einen Gerichtnamen ein.";
+"lab.validation.nameTooLong"  = "Gerichtname ist zu lang (max. 80 Zeichen).";
+"lab.validation.selectProduct" = "Bitte wähle ein Produkt.";
+"lab.addToBasket"             = "In den Korb";
+"lab.addAllToBasket"          = "Alles in den Korb";
+"lab.needToBuy"               = "Muss kaufen";
+"lab.atHome"                  = "Zuhause";
+"lab.addNewIngredient"        = "Neue Zutat hinzufügen";
+"lab.fromBasket"              = "Aus Korb";
+"lab.favorite"                = "Favorit";
+"lab.search.placeholder"      = "Rezepte suchen…";
+"lab.sort.recent"             = "Neueste";
+"lab.sort.name"               = "Name";
+"lab.sort.cost"               = "Kosten";
+"lab.sort.ingredients"        = "Zutaten";
+
+// ─── Spice Rack (Settings) ───────────────────────────────
+"spice.title"               = "Gewürzregal";
+"spice.profile"             = "Koch-Profil";
+"spice.name"                = "Koch-Name";
+"spice.avatar"              = "Avatar";
+"spice.avatar.pick"         = "Wähle dein Koch-Emoji";
+"spice.accent"              = "Akzentfarbe";
+"spice.stats"               = "Küchenstatistik";
+"spice.stats.items"         = "Zutaten gesamt";
+"spice.stats.prices"        = "Preiseinträge gesamt";
+"spice.stats.trophies"      = "Verdiente Trophäen";
+"spice.stats.memberSince"   = "Kocht seit";
+"spice.export"              = "Daten teilen";
+"spice.export.desc"         = "Preishistorie als CSV exportieren";
+"spice.trophies"            = "Trophäen-Vitrine";
+"spice.trophies.empty"      = "Noch keine Trophäen. Weiter erfassen!";
+"spice.trophies.unlocked"   = "%d freigeschaltet";
+"spice.danger"              = "Gefahrenzone";
+"spice.resetAll"            = "Küche zurücksetzen";
+"spice.resetAll.confirm"    = "Alle Daten werden gelöscht. Bist du sicher?";
+"spice.version"             = "Version %@";
+
+// ─── Trophies / Achievements ─────────────────────────────
+"trophy.firstDish"          = "Erstes Gericht";
+"trophy.firstDish.desc"     = "Dein erstes Produkt hinzugefügt.";
+"trophy.firstTag"           = "Preis-Tagger";
+"trophy.firstTag.desc"      = "Deinen ersten Preis erfasst.";
+"trophy.fiveItems"          = "Vorratskammer-Bauer";
+"trophy.fiveItems.desc"     = "5 verschiedene Produkte verfolgt.";
+"trophy.twentyTags"         = "Stammkunde";
+"trophy.twentyTags.desc"    = "20 Preise erfasst.";
+"trophy.fiftyTags"          = "Daten-Sommelier";
+"trophy.fiftyTags.desc"     = "50 Preise erfasst.";
+"trophy.hundredTags"        = "Großer Koch";
+"trophy.hundredTags.desc"   = "100 Preise erfasst.";
+"trophy.threeStores"        = "Laden-Hopper";
+"trophy.threeStores.desc"   = "Preise in 3 Geschäften verglichen.";
+"trophy.weekStreak"         = "Wochen-Köchler";
+"trophy.weekStreak.desc"    = "7 Tage am Stück Preise erfasst.";
+
+// ─── Gamification ─────────────────────────────────────────
+"game.levelUp"              = "Aufgestiegen! 🎉";
+"game.levelUp.body"         = "Du hast Stufe %d erreicht!";
+"game.xpGained"             = "+%d EP";
+"game.newTrophy"            = "Trophäe freigeschaltet!";
+
+// ─── Accent Flavors ──────────────────────────────────────
+"accent.saffron"            = "Safran-Gold";
+"accent.matcha"             = "Matcha-Zen";
+"accent.chili"              = "Chili-Glut";
+"accent.lavender"           = "Lavendel-Frost";
+
+// ─── Accessibility ────────────────────────────────────────
+"a11y.tab.kitchen"          = "Dashboard-Tab";
+"a11y.tab.basket"           = "Warenkorb-Tab";
+"a11y.tab.oven"             = "Inflationsanalyse-Tab";
+"a11y.tab.lab"              = "Rezept-Labor-Tab";
+"a11y.tab.spiceRack"        = "Einstellungen-Tab";
