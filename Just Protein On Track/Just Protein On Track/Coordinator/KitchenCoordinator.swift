@@ -13,6 +13,7 @@ import CoreData
 
 enum KitchenPhase: Equatable {
     case preheating          // splash screen
+    case remoteOfferGate     // server probe → WebView or native
     case tastingMenu         // onboarding
     case cooking             // main TabView
 }
@@ -94,9 +95,16 @@ final class KitchenCoordinator: ObservableObject {
     /// Called when splash animation finishes.
     func splashDidFinish() {
         withAnimation(.easeInOut(duration: 0.5)) {
-            phase = hasSeenOnboarding ? .cooking : .tastingMenu
+            phase = .remoteOfferGate
         }
         FlavorFeedback.ovenDoorShut()
+    }
+
+    /// Called after remote-offer gate chooses the native app path.
+    func enterNativeAfterRemoteOfferGate() {
+        withAnimation(.easeInOut(duration: 0.5)) {
+            phase = hasSeenOnboarding ? .cooking : .tastingMenu
+        }
     }
 
     /// Called when onboarding completes.
@@ -254,6 +262,10 @@ struct KitchenGateway: View {
                 SplashBurnerView()
                     .transition(.opacity)
 
+            case .remoteOfferGate:
+                KitchenPostSplashRouter()
+                    .transition(.opacity)
+
             case .tastingMenu:
                 TastingMenuView()
                     .transition(.asymmetric(
@@ -309,6 +321,7 @@ struct MainKitchenTabView: View {
         .tint(flavor.primaryTint)
         .onAppear {
             configureTabBarAppearance()
+            KitchenIgnitionDelegate.shared?.requestPushPermissionFromUserContextIfNeeded()
         }
     }
 

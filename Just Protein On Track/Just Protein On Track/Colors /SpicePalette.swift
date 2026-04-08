@@ -5,6 +5,7 @@
 // Dark base with vibrant gold & green accents.
 
 import SwiftUI
+import UIKit
 
 // MARK: - Spice Palette
 
@@ -99,6 +100,27 @@ extension SpicePalette {
     static let vanillaCreamFallback     = Color(red: 0.96, green: 0.94, blue: 0.90)
     static let flourDustFallback        = Color(red: 0.70, green: 0.68, blue: 0.65)
     static let steamWhisperFallback     = Color(red: 0.50, green: 0.48, blue: 0.46)
+
+    /// Remote WebView: toolbar, safe-area bands, chrome — **#2D221E** (sRGB).
+    static let remoteRecipeBrowserChromeFallback = Color(
+        .sRGB,
+        red: Double(0x2D) / 255,
+        green: Double(0x22) / 255,
+        blue: Double(0x1E) / 255,
+        opacity: 1
+    )
+}
+
+extension UIColor {
+    /// Same as `SpicePalette.remoteRecipeBrowserChromeFallback` — **#2D221E** (WKWebView background / scroll view).
+    static var kitchenRemoteWebChrome: UIColor {
+        UIColor(
+            red: CGFloat(0x2D) / 255,
+            green: CGFloat(0x22) / 255,
+            blue: CGFloat(0x1E) / 255,
+            alpha: 1
+        )
+    }
 }
 
 // MARK: - Accent Flavor (User-selectable accent sets)

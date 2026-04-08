@@ -8,28 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3EBA0E9A2F866676007CA6B6 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3EBA0E992F866676007CA6B6 /* FirebaseMessaging */; };
+		3EBA0E9D2F866676007CA6B6 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3EBA0E9C2F866676007CA6B6 /* FirebaseCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E0DE8AB2F4B20E80069DD27 /* Just Protein On Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Protein On Track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3EBA0E972F866628007CA6B6 /* Exceptions for "Just Protein On Track" folder in "Just Protein On Track" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Just-Protein-On-Track-Info.plist",
-			);
-			target = 3E0DE8AA2F4B20E80069DD27 /* Just Protein On Track */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3E0DE8AD2F4B20E80069DD27 /* Just Protein On Track */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3EBA0E972F866628007CA6B6 /* Exceptions for "Just Protein On Track" folder in "Just Protein On Track" target */,
-			);
 			path = "Just Protein On Track";
 			sourceTree = "<group>";
 		};
@@ -40,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBA0E9D2F866676007CA6B6 /* FirebaseCore in Frameworks */,
 				3EBA0E9A2F866676007CA6B6 /* FirebaseMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +72,7 @@
 			);
 			name = "Just Protein On Track";
 			packageProductDependencies = (
+				3EBA0E9C2F866676007CA6B6 /* FirebaseCore */,
 				3EBA0E992F866676007CA6B6 /* FirebaseMessaging */,
 			);
 			productName = "Just Protein On Track";
@@ -291,7 +281,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "asd.Just-Protein-On-Track";
+				PRODUCT_BUNDLE_IDENTIFIER = com.annebodt.jprot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -331,7 +321,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "asd.Just-Protein-On-Track";
+				PRODUCT_BUNDLE_IDENTIFIER = com.annebodt.jprot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -387,6 +377,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3EBA0E982F866676007CA6B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		3EBA0E9C2F866676007CA6B6 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EBA0E982F866676007CA6B6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

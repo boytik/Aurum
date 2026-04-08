@@ -97,7 +97,10 @@ struct SplashBurnerView: View {
                     .frame(height: 50)
             }
         }
-        .onAppear(perform: startPreheatingSequence)
+        .onAppear {
+            KitchenCampaignPrefetch.shared.beginIfEligible()
+            startPreheatingSequence()
+        }
         .accessibilityElement(children: .combine)
         .accessibilityLabel("Loading app")
     }
